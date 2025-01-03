@@ -64,6 +64,7 @@
                 </div>
 
                 <div>
+
                     <img src="images/usericon.PNG">
                 </div>
             </div>
@@ -79,10 +80,10 @@
                 </div>
             </div>
             <div class="heart">
-                <img src="images/hearticon.PNG">
+                <a href="#"> <img src="images/hearticon.PNG"></a>
             </div>
             <div class="cart">
-                <img src="images/cart3.PNG">
+                <a href="#"><img src="images/cart3.PNG"></a>
             </div>
         </div>
     </div>
@@ -1459,14 +1460,13 @@
         <h2>Shop All Things Home</h2>
     </div>
     <div class="column8 ">
-        <button onclick="showDiv('div1')"
-         class="active">Todays Deal</button>
-        <button onclick="showDiv('div2')" id="btn">Gifting Ideas</button>
-        <button onclick="showDiv('div3')" id="btn">Living Room</button>
-        <button onclick="showDiv('div4')" id="btn">Bed Room</button>
-        <button onclick="showDiv('div5')" id="btn">Dining Room</button>
-        <button onclick="showDiv('div6')" id="btn">Study Room</button>
-        <button onclick="showDiv('div7')" id="btn">Luxury Furniture</button>
+        <button onclick="showDiv('div1',this.id);" class="active" id="btn1">Todays Deal</button>
+        <button onclick="showDiv('div2',this.id);" id="btn2">Gifting Ideas</button>
+        <button onclick="showDiv('div3',this.id);" id="btn3">Living Room</button>
+        <button onclick="showDiv('div4',this.id);" id="btn4">Bed Room</button>
+        <button onclick="showDiv('div5',this.id);" id="btn5">Dining Room</button>
+        <button onclick="showDiv('div6',this.id);" id="btn6">Study Room</button>
+        <button onclick="showDiv('div7',this.id);" id="btn7">Luxury Furniture</button>
     </div>
     <div class="column9" style="display:grid;" id="div1">
         <div class="i1">
@@ -1784,7 +1784,7 @@
             </li>
         </ul>
     </div>
-    <div class="column12"  style="display:flex;" id="item1">
+    <div class="column12" style="display:flex;" id="item1">
         <div>
             <img src="images/m1.6.PNG">
         </div>
@@ -1804,7 +1804,7 @@
             <img src="images/m1.1.jpg">
         </div>
     </div>
-    
+
     <div class="column12" id="item2">
         <div>
             <img src="images/m2.1.PNG">
@@ -1825,17 +1825,83 @@
             <img src="images/m2.6.PNG">
         </div>
     </div>
+    <div class="column12" id="item3">
+
+        <img src="images/m3.1.PNG">
+
+
+        <img src="images/m3.2.PNG">
+
+        <img src="images/m3.3.PNG">
+
+        <img src="images/m3.4.PNG">
+
+        <img src="images/m3.5.PNG">
+
+        <img src="images/m3.6.PNG">
+
+    </div>
+    <section class="explorebywoodworthbanner">
+        <img src="images/woodworth by pepperfry.jpg">
+    </section>
+    <section class="frydeals">
+        <h2>What The Fry Deals</h2>
+    </section>
+    <section class="setofimages6">
+        <div class="prouductimages" id="wishlist">
+            <img src="images/lily.jpg">
+            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div  class="prouductimages" id="wishlist" >
+            <img src="images/automatic water dispenser.jpg">
+            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div  class="prouductimages" id="wishlist">
+            <img src="images/humphry.jpg">
+            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div  class="prouductimages" id="wishlist">
+            <img src="images/baby unicorn.jpg">
+            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+        </div >
+        <div  class="prouductimages" id="wishlist">
+            <img src="images/mousepad for laptop.jpg">
+            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+        </div>
+
+        <div  class="prouductimages" id="wishlist">
+            <img src="images/mania deals.jpg ">
+            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+        </div>
+
+    </section>
+    <section class="furniturebazar">
+       
+            <h2> Furniture Bazaar  </h2>
+       
+    </section>
+<div class="whislistbtn">
+    <button onclick="displayox('box1')" >Furniture</button>
+    <button onclick="displaybox('box2')" >Mattresses</button>
+    <button onclick="displaybox('box3')" >Home Goods</button>
+</div>
+
+<section class="productswhislist">
+
+</section>
     <script>
 
-        function showDiv(input) {
+        function showDiv(input,input2) {
             const allDivs = document.querySelectorAll('.column9');
             allDivs.forEach(div => {
                 div.style.display = div.id === input ? 'grid' : 'none';
+ });
+ const allButtons = document.querySelectorAll('.column8 button');
+ allButtons.forEach(btn => {
+    console.log(input2 +'button '+btn.id);
+    btn.style.background = btn.id === input2 ? 'pink' : 'none';
+ });
 
-
-            });
-            console.log(input);
-            document.querySelectorAll('#btn').style.backgroundColor = "rgb(248, 226, 226)"
 
         }
 
@@ -1846,10 +1912,17 @@
 
 
             });
+            const allul = document.querySelectorAll('.column11 ul');
+ allul.forEach(ul => {
+    console.log(input2 +'button '+btn.id);
+    btn.style.background = btn.id === input2 ? 'pink' : 'none';
+ });
+
             console.log(input);
-           
+
 
         }
+     
     </script>
 
 </body>

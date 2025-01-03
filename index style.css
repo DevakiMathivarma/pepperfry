@@ -139,7 +139,7 @@ nav ul li:hover {
     margin-top: -10px;
 }
 
-.heart img:hover {
+.heart a:hover {
     color: #ff7035
 }
 .sign {
@@ -927,6 +927,96 @@ width:1248px;
     height:210px;
     padding-left: 8px;
 }
+.explorebywoodworthbanner{
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.explorebywoodworthbanner img{
+   
+    
+    height:150px;
+    width:1188px;
+   
+}
+.frydeals{
+    text-align: center;
+    margin-top: 10px;
+}
+.frydeals h2{
+    color:#7a4a19;
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+.setofimages6 img{
+    width:190px;
+    height:209px;
+    margin-left: 10px;
+}
+.setofimages6{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setofimages6 .prouductimages{
+    position:relative;
+}
+.setofimages6 button{
+    position:absolute;
+    left:150px;
+    top:200px;
+    border: none;
+    cursor: pointer;
+}
+.setofimages6 button i{
+    font-size: 18px;
+    background: none;
+}
+.furniturebazar{
+    text-align: center;
+    margin-top: 20px;
+}
+.furniturebazar h2{
+    color:#7a4a19;
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+
+
+.whislistbtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.whislistbtn button{
+    padding:15px;
+    font-size: 1rem;
+    color:#848484;
+    font-weight: bolder;
+   margin-left: 15px;
+   border-radius: 50px;
+    border: 2px solid #E0E0E0; 
+    outline: none;
+    background-color: white;
+    cursor:pointer;
+    box-sizing: border-box;
+}
+.whislistbtn button:hover{
+    border:1px solid #ff7035;
+    color:#ff7035;
+   
+}
+
  /* @media(min-width:325px){
     .mobile{
         display:block;
