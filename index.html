@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Furniture Shopping in</title>
+    <link rel="icon" type="image/x-icon" href="/images/pf.PNG">
     <link rel="stylesheet" href="index style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -1410,7 +1411,16 @@
                     </div>
                 </div>
             </li>
-            <li><a href="#">Modular</a></li>
+            <li>
+                <a href="#">Modular</a>
+                <div class="drop7">
+                    <div class="content">
+                        <div class="row">
+                            <img src="images/modular img.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
     <div class="column3">
@@ -1753,7 +1763,7 @@
     <div class="column11">
         <ul>
             <li class="active1">
-                <button onclick="show('item1')">
+                <button onclick="show('item1',this.id)" id="clr1">
                     <div>
                         <img src="images/f1.PNG">
                     </div>
@@ -1763,7 +1773,7 @@
                 </button>
             </li>
             <li>
-                <button onclick="show('item2')">
+                <button onclick="show('item2',this.id)" id="clr2">
                     <div>
                         <img src="images/f1.PNG">
                     </div>
@@ -1773,7 +1783,7 @@
                 </button>
             </li>
             <li>
-                <button onclick="show('item3')">
+                <button onclick="show('item3',this.id)" id="clr3">
                     <div>
                         <img src="images/f2.PNG">
                     </div>
@@ -1852,77 +1862,273 @@
             <img src="images/lily.jpg">
             <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div  class="prouductimages" id="wishlist" >
+        <div class="prouductimages" id="wishlist">
             <img src="images/automatic water dispenser.jpg">
             <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div  class="prouductimages" id="wishlist">
+        <div class="prouductimages" id="wishlist">
             <img src="images/humphry.jpg">
             <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div  class="prouductimages" id="wishlist">
+        <div class="prouductimages" id="wishlist">
             <img src="images/baby unicorn.jpg">
             <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
-        </div >
-        <div  class="prouductimages" id="wishlist">
+        </div>
+        <div class="prouductimages" id="wishlist">
             <img src="images/mousepad for laptop.jpg">
             <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
         </div>
 
-        <div  class="prouductimages" id="wishlist">
+        <div class="prouductimages" id="wishlist">
             <img src="images/mania deals.jpg ">
             <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
         </div>
 
     </section>
     <section class="furniturebazar">
-       
-            <h2> Furniture Bazaar  </h2>
-       
+
+        <h2> Furniture Bazaar </h2>
+
     </section>
-<div class="whislistbtn">
-    <button onclick="displayox('box1')" >Furniture</button>
-    <button onclick="displaybox('box2')" >Mattresses</button>
-    <button onclick="displaybox('box3')" >Home Goods</button>
-</div>
+    <div class="whislistbtn">
+        <button onclick="displaybox('box1',this.id)" id="btn1">Furniture</button>
+        <button onclick="displaybox('box2',this.id)" id="btn2">Mattresses</button>
+        <button onclick="displaybox('box3',this.id)" id="btn3">Home Goods</button>
+    </div>
+    <section class="whislistproductsbutton">
+        <div class="productswhislist  whislist" id="box1">
+            <img src="images/nikamel.jpg">
+            <img src="images/trevi.jpg">
+            <img src="images/interio.jpg">
+            <img src="images/globia.jpg">
+            <img src="images/home town.jpg">
+            <img src="images/durian.jpg">
+            <img src="images/crystal.jpg">
+            <img src="images/royal.jpg">
+        </div>
 
-<section class="productswhislist">
+        <div class="productswhislist-forbutton2  whislist" id="box2">
+            <img src="images/duroflex.jpg">
+            <img src="images/sleepwell.jpg">
+            <img src="images/usha.jpg">
+            <img src="images/durfi.jpg">
+            <img src="images/coirfit.jpg">
+            <img src="images/sleepycat.jpg">
+            <img src="images/sleep company.jpg">
+            <img src="images/springtex.jpg">
+        </div>
 
-</section>
+        <div class="productswhislist-forbutton3  whislist" id="box3">
+            <img src="images/45%off.jpg">
+            <img src="images/clockrandom.jpg">
+            <img src="images/mia decor.jpg">
+            <img src="images/kappor.jpg">
+            <img src="images/53&off.jpg">
+            <img src="images/amaya decors.jpg">
+            <img src="images/ileka.jpg">
+            <img src="images/abesindia.jpg">
+        </div>
+    </section>
+
+
+
+    <div class="banner3">
+        <img src="images/mintwood.jpg">
+    </div>
+
+
+    <section class="slider-with-button">
+        <div>
+            <img src="images/furniture exchange program.jpg">
+        </div>
+        <div class="container">
+            <button id="prevbtn" class="btnleftright"><i class="fa-solid fa-less-than"></i></i></button>
+            <div class="imageslider">
+                <img src="images/navimumbai.jpg" class="sliderview">
+                <img src="images/gurgram.jpg" class="sliderview">
+                <img src="images/gurgram.jpg" class="sliderview">
+                <img src="images/kolkatta.jpg" class="sliderview">
+                <img src="images/chennai.jpg" class="sliderview">
+                <img src="images/hyderabad.jpg" class="sliderview">
+                <img src="images/pune.jpg" class="sliderview">
+                <img src="images/new delhi.jpg" class="sliderview">
+                <img src="images/mumbai.jpg" class="sliderview">
+                <img src="images/shimla.jpg" class="sliderview">
+                <img src="images/bengaluru.jpg" class="sliderview">
+            </div>
+            <button id="nextbtn" class="btnleftright"><i class="fa-solid fa-greater-than"></i></button>
+        </div>
+
+
+    </section>
+
+
+    <div class="two-banner">
+        <img src="images/sensitive content banner.jpg">
+        <img src="images/wellness journey banner.jpg">
+    </div>
+
+    <div class="newest-arrivals">
+
+        <h2> Discover Our Newest Arrivals </h2>
+
+    </div>
+
+    <div class="newest-collections">
+        <div class="newest-arrivals-products">
+            <img src="images/yellow chair.jpg"><br>
+            <a href="#" class="first-product">Swivel Chairs</a><br>
+            <a href="#" class="second-product">25+ options starting at just Rs.9999</a>
+
+
+        </div>
+        <div class="newest-arrivals-products">
+            <img src="images/lounge.jpg"><br>
+            <a href="#" class="first-product">Slouchers Lounge:Filled Bean Bags</a><br>
+
+            <a href="#" class="second-product">10+ options,starting at Rs.2399 -></a>
+        </div>
+        <div class="newest-arrivals-products vastuone">
+            <img src="images/vastu.jpg"><br>
+            <a href="#" class="first-product vastu">Vastu & Feng Shui with Free Consultation</a>
+
+            <a href="#" class="second-product">200+ options</a>
+        </div>
+        <div class="newest-arrivals-products">
+            <img src="images/palm spring collection.jpg"><br>
+            <a href="#" class="first-product">The Palm Spring Collections</a><br>
+            <a href="#" class="second-product">10+ options,starting from 6949 -></a>
+        </div>
+    </div>
+
+    <div class="making-diff">
+
+        <h2>Making a Difference </h2>
+
+    </div>
+
+    <div class="two-banner content">
+        <img src="images/proudly swadeshi.jpg">
+        <img src="images/sowing sustainability.jpg">
+    </div>
+
+    <div class="need-buying-content">
+
+        <h2>Need Help Buying?</h2>
+
+    </div>
+    <section class="buying-guides">
+        <a href="#"> <img src="images/choosing the right sofa.jpg"></a>
+        <a href="#"> <img src="images/perfect bed for your room.jpg"></a>
+        <a href="#"><img src="images/buy the perfect matresses.jpg"></a>
+        <a href="#"><img src="images/perfect sofa cum beds.jpg"></a>
+        <a href="#"><img src="images/everything baout wardrobes.jpg"></a>
+        <a hrfe="#"> <img src="images/for daily home inspiration.jpg"></a>
+    </section>
+    <div class="interior-trends-content">
+
+        <h2>Follow Home Interior Trends</h2>
+
+    </div>
+    <section class="newest-collections">
+        <div class="newest-arrivals-products">
+            <img src="images/sofawhite.jpg"><br>
+            <a href="#" class="first-product">Slouchers Lounge:Filled Bean Bags</a><br>
+
+            <a href="#" class="second-product">10+ options,starting at Rs.2399 -></a>
+        </div>
+        <div class="newest-arrivals-products">
+            <img src="images/carpets.jpg"><br>
+            <a href="#" class="first-product">Slouchers Lounge:Filled Bean Bags</a><br>
+
+            <a href="#" class="second-product">10+ options,starting at Rs.2399 -></a>
+        </div>
+        <div class="newest-arrivals-products">
+            <img src="images/furniture.jpg"><br>
+            <a href="#" class="first-product">Slouchers Lounge:Filled Bean Bags</a><br>
+
+            <a href="#" class="second-product">10+ options,starting at Rs.2399 -></a>
+        </div>
+    </section>
+
     <script>
 
-        function showDiv(input,input2) {
+        function showDiv(input, input2) {
             const allDivs = document.querySelectorAll('.column9');
             allDivs.forEach(div => {
                 div.style.display = div.id === input ? 'grid' : 'none';
- });
- const allButtons = document.querySelectorAll('.column8 button');
- allButtons.forEach(btn => {
-    console.log(input2 +'button '+btn.id);
-    btn.style.background = btn.id === input2 ? 'pink' : 'none';
- });
+            });
+            const allButtons = document.querySelectorAll('.column8 button');
+            allButtons.forEach(btn => {
+                console.log(input2 + 'button ' + btn.id);
+                btn.style.background = btn.id === input2 ? 'pink' : 'none';
+            });
 
 
         }
 
-        function show(input) {
+        function show(input, input2) {
             const allDivs = document.querySelectorAll('.column12');
             allDivs.forEach(div => {
                 div.style.display = div.id === input ? 'flex' : 'none';
 
 
             });
-            const allul = document.querySelectorAll('.column11 ul');
- allul.forEach(ul => {
-    console.log(input2 +'button '+btn.id);
-    btn.style.background = btn.id === input2 ? 'pink' : 'none';
- });
+            const allul = document.querySelectorAll('.column11 ul button ');
+            allul.forEach(ul => {
+                // console.log(input2 + 'button ' + btn.id);
+                ul.style.color = ul.id === input2 ? '#ff7035' : 'none';
+            });
 
-            console.log(input);
+
 
 
         }
-     
+
+        function displaybox(input, input2) {
+            const allDivs = document.querySelectorAll('.whislist');
+            allDivs.forEach(div => {
+                div.style.display = div.id === input ? 'block' : 'none';
+            });
+            const allButtons = document.querySelectorAll('.whislistbtn button');
+            allButtons.forEach(btn => {
+                console.log(input2 + 'button ' + btn.id);
+                btn.style.background = btn.id === input2 ? 'pink' : 'none';
+            });
+
+
+        }
+
+        let sliderimage = document.querySelector('.imageslider');
+        let images = document.querySelectorAll('.sliderview');
+        const totalslides = images.length;
+        let prevBtn = document.getElementById('prevbtn');
+        let nextBtn = document.getElementById('nextbtn');
+
+        let currentIndex = 0;
+
+
+        function updateSlider() {
+            const width = images[0].clientWidth;
+            sliderimage.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                updateSlider();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        });
+
+
+
     </script>
 
 </body>

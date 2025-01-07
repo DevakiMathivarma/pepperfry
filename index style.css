@@ -228,6 +228,23 @@ nav ul li:hover {
 .column2 ul li a {
     color: #121212;
     text-decoration: none;
+    transition:0.2s ease-in;
+}
+.column2 ul li a::after{
+    content: "";
+    width:0%;
+    height:4px;
+    position:absolute;
+    left:0;
+    bottom:1px;
+    background-color: #ff7035;
+   
+}
+.column2 ul li a:hover:after{
+    width:100%;
+}
+.column2 ul li a:hover{
+    color:#ff7035;
 }
 
 .navlinks li{
@@ -340,7 +357,7 @@ nav ul li:hover {
 
 .drop {
     position: absolute;
-    top: 20px;
+    top: 30px;
    transform: translateX(-0%);
     right: -920px;
      visibility: hidden; 
@@ -348,9 +365,12 @@ nav ul li:hover {
     z-index: 999;
    
 }
+.drop7 .content .row img{
+ width:1190px;
+}
 .drop1{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
     left: -150px;
      visibility: hidden; 
@@ -359,7 +379,7 @@ nav ul li:hover {
 }
 .drop2{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
     right:-800px;
      visibility: hidden; 
@@ -368,7 +388,7 @@ nav ul li:hover {
 }
 .drop3{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
     right:-600px;
      visibility: hidden; 
@@ -377,7 +397,7 @@ nav ul li:hover {
 }
 .drop4{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
     right:-600px;
      visibility: hidden; 
@@ -386,7 +406,7 @@ nav ul li:hover {
 }
 .drop5{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
     right:-300px;
      visibility: hidden; 
@@ -395,7 +415,7 @@ nav ul li:hover {
 }
 .drop6{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
     right:-250px;
      visibility: hidden; 
@@ -404,9 +424,9 @@ nav ul li:hover {
 }
 .drop7{
     position: absolute;
-    top: 20px;
+    top: 30px;
    
-    right:-600px;
+    right:-150px;
      visibility: hidden; 
     cursor:pointer;
     z-index: 999;
@@ -976,7 +996,9 @@ width:1248px;
 }
 .setofimages6 button i{
     font-size: 18px;
-    background: none;
+    background: white
+    
+    ;
 }
 .furniturebazar{
     text-align: center;
@@ -1015,6 +1037,189 @@ width:1248px;
     border:1px solid #ff7035;
     color:#ff7035;
    
+}
+.productswhislist img{
+    width:291px;
+    height:321px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.productswhislist{
+    text-align: center;
+    margin-top: 20px;
+}
+.productswhislist-forbutton2 img{
+    width:291px;
+    height:321px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.productswhislist-forbutton2{
+    text-align: center;
+    margin-top: 20px;
+    display:none;
+}
+.productswhislist-forbutton3 img{
+    width:291px;
+    height:321px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.productswhislist-forbutton3{
+    text-align: center;
+    margin-top: 20px;
+    display:none;
+}
+.banner3{
+    width:100%;
+    height:auto;
+}
+.banner3 img{
+    height:200px;
+    width:1347px;
+}
+.slider-with-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+    
+.container{
+    position:relative;
+    width:300px;
+    overflow:hidden;
+
+}
+.imageslider{
+    display:flex;
+    transition:0.5s ease-in;
+
+}
+.sliderview{
+    width:300px;
+    flex-shrink: 0;
+}
+.btnleftright{
+    position:absolute;
+    top:50%;transform: translateY(-50%);
+    padding:10px 20px;
+    z-index: 1000;
+}
+#prevbtn{
+    left:0;
+
+}
+#nextbtn{
+    right:0;
+}
+.two-banner img{
+    width:594px;
+    height:187px;
+    padding: 5px;
+}
+.two-banner{
+   text-align: center;
+   margin-top: 50px;
+
+}
+.newest-arrivals{
+    text-align: center;
+    margin-top: 40px;
+}
+.newest-arrivals h2{
+    color:#7a4a19;
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+.newest-collections{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.newest-arrivals-products img{
+    width:291px;
+    height:320px;
+    padding:8px;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+.newest-arrivals-products a{
+    text-decoration: none;
+    padding-left: 8px;
+}
+.first-product{
+color:#5b5b5b;
+font-size: 15px;
+font-family: "Manrope", serif;
+font-weight: bolder;
+
+}
+.vastuone{
+    margin-top: 25px;
+} 
+.vastu{
+    width:250px;
+    display: block;
+}
+.second-product{
+    color:#848484;
+    font-size: 12px;
+font-family: "Manrope", serif;
+
+
+}
+.making-diff{
+    text-align: center;
+    margin-top: 40px;
+}
+.making-diff h2{
+    color:#7a4a19;
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+.content{
+    margin-top: 5px;
+}
+.need-buying-content{
+    text-align: center;
+    margin-top: 40px;
+}
+.need-buying-content h2{
+    color:#7a4a19;
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+.buying-guides img{
+    width:203px;
+    height:203px;
+}
+.buying-guides {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.interior-trends-content{
+    text-align: center;
+    margin-top: 40px;
+}
+.interior-trends-content h2{
+    color:#7a4a19;
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 4px;
+    font-weight: bold;
 }
 
  /* @media(min-width:325px){
