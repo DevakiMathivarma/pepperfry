@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <div id="popup" class="popup"></div>
     <div class="mobile">
         <button>&#9776;</button>
         <img src="images/pf.PNG">
@@ -1858,30 +1859,30 @@
         <h2>What The Fry Deals</h2>
     </section>
     <section class="setofimages6">
-        <div class="prouductimages" id="wishlist">
+        <div class="prouductimages">
             <img src="images/lily.jpg">
-            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+            <button onclick="display('wishlist1','lilly')" id="wishlist1"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div class="prouductimages" id="wishlist">
+        <div class="prouductimages" >
             <img src="images/automatic water dispenser.jpg">
-            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+            <button onclick="display('wishlist2','automatic water dispenser')"id="wishlist2"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div class="prouductimages" id="wishlist">
+        <div class="prouductimages" >
             <img src="images/humphry.jpg">
-            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+            <button onclick="display('wishlist3','humphry')"id="wishlist3"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div class="prouductimages" id="wishlist">
+        <div class="prouductimages" >
             <img src="images/baby unicorn.jpg">
-            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+            <button onclick="display('wishlist4','Baby Unicorn')"id="wishlist4"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <div class="prouductimages" id="wishlist">
+        <div class="prouductimages" >
             <img src="images/mousepad for laptop.jpg">
-            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+            <button onclick="display('wishlist5','Mousepad for Laptop')" id="wishlist5"><i class="fa-regular fa-heart"></i></button>
         </div>
 
-        <div class="prouductimages" id="wishlist">
+        <div class="prouductimages" >
             <img src="images/mania deals.jpg ">
-            <button onclick="display()"><i class="fa-regular fa-heart"></i></button>
+            <button onclick="display('wishlist6','Mania Deals')" id="wishlist6"><i class="fa-regular fa-heart"></i></button>
         </div>
 
     </section>
@@ -1960,63 +1961,63 @@
               </div>
               </div>
              <div class="carousel-item">
-              <img src="images/kolkatta.jpg" alt="Image 3">
+              <img src="images/kolkatta.jpg">
               <div class="carousel-caption">
                 <h2>Kolkata</h2>
                 <p>6 Stores</p>
               </div>
                </div>
                <div class="carousel-item">
-              <img src="images/chennai.jpg" alt="Image 4">
+              <img src="images/chennai.jpg">
               <div class="carousel-caption">
                 <h2>Chennai</h2>
                 <p>5 Stores</p>
               </div>
               </div>
               <div class="carousel-item">
-              <img src="images/hyderabad.jpg" alt="Image 5">
+              <img src="images/hyderabad.jpg">
               <div class="carousel-caption">
                 <h2>Hyderabad</h2>
                 <p>6 Stores</p>
               </div>
               </div>
               <div class="carousel-item">
-                <img src="images/hyderabad.jpg" alt="Image 5">
+                <img src="images/hyderabad.jpg">
                 <div class="carousel-caption">
                   <h2>Mumbai</h2>
                   <p>7 Stores</p>
                 </div>
                 </div>
                <div class="carousel-item">
-                <img src="images/pune.jpg" alt="Image 5">
+                <img src="images/pune.jpg">
                 <div class="carousel-caption">
                   <h2>Pune</h2>
                   <p>6 Stores</p>
                 </div>
                </div>
                <div class="carousel-item">
-                <img src="images/new delhi.jpg" alt="Image 5">
+                <img src="images/new delhi.jpg">
                 <div class="carousel-caption">
                   <h2>New Delhi</h2>
                   <p>6 Stores</p>
                 </div>
                </div>
                <div class="carousel-item">
-                <img src="images/mumbai.jpg" alt="Image 5">
+                <img src="images/mumbai.jpg">
                 <div class="carousel-caption">
                   <h2>Mumbai</h2>
                   <p>8 Stores</p>
                 </div>
                </div>
               <div class="carousel-item">
-                <img src="images/shimla.jpg" alt="Image 5">
+                <img src="images/shimla.jpg">
                 <div class="carousel-caption">
                   <h2>Shimla</h2>
                   <p>1 Stores</p>
                 </div>
               </div>
                <div class="carousel-item">
-                <img src="images/explore more.png" alt="Image 5">
+                <img src="images/explore more.png">
                 <div class="carousel-caption">
                     <h2>Explore More</h2>
                   <p>Stores Near You</p>
@@ -2640,6 +2641,40 @@ function updateCarousel() {
   const offset = -currentIndex * (100 / itemsToShow);
   carouselContainer.style.transform = `translateX(${offset}%)`;
 }
+
+const wishlistState={
+    item1:false,
+    item2:false,
+    item3:false,
+    item4:false,
+    item5:false,
+
+}
+function display(itemId,itemvalue){
+    whislistState[itemId]=!wishlistState[itemId];
+    const popup=document.getElementById('popup');
+    const button=doument.getElementById(itemId);
+    if(wishlistState[itemId]){
+        button.classList.add('added');
+        popup.textContent=`${itemvalue} added to wishlist`;
+        console.log("true")
+    }else{
+        button.classList.remove('added');
+        popup.textContent=`${itemvalue} removed from wishlist`;
+        console.log("false")
+    }
+    popup.style.display='block';
+    setTimeout(()=>{
+        popup.style.display='none';
+    },2000);
+    
+
+
+
+
+    
+
+    }
 
 
 </script>
