@@ -40,19 +40,19 @@ nav ul li:hover {
 
 }
 
-.column1 input {
+/* .column1 input {
     background: transparent;
     border: none;
     border-bottom: 2px solid rgb(196, 193, 193);
+} */
+
+.col1 input{
+   
+    position:relative;
+   
 }
 
-.col1 {
-    width: 300px;
-}
 
-.col1 input {
-    position: relative;
-}
 
 .col1 input::placeholder {
     padding-bottom: 5px;
@@ -62,7 +62,7 @@ nav ul li:hover {
 
 .col1 i {
     position: absolute;
-    left: 370px;
+    left: 350px;
     color: rgb(189, 188, 188);
     margin-bottom: 7px;
     cursor: pointer;
@@ -70,26 +70,29 @@ nav ul li:hover {
 }
 
 .inputfocus {
-    width: 100%;
+    display:inline-block;
+    width: 250px;
     background: transparent;
     border: none;
     border-bottom: 2px solid rgb(214, 210, 210);
-
+    transition: width 0.5s ease-in
 }
 
 .inputfocus:focus {
-    width: 120%;
+    width: 300px;
     border-bottom: 2px solid rgb(214, 213, 213);
+    background-color: white;
+    outline:none;
 }
 
-.col1 {
+/* .col1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
     gap: 60px;
 
-}
+} */
 
 .col2 {
     display: flex;
@@ -375,23 +378,21 @@ nav ul li:hover {
 .drop {
     position: absolute;
     top: 30px;
-    transform: translateX(-0%);
-    right: -920px;
+  
+   left:-50px;
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
 
 }
 
-.drop7 .content .row img {
-    width: 1190px;
-}
+
 
 .drop1 {
     position: absolute;
     top: 30px;
-
-    left: -150px;
+   left:-90px;
+   
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -400,8 +401,8 @@ nav ul li:hover {
 .drop2 {
     position: absolute;
     top: 30px;
-
-    right: -800px;
+   left:-320px;
+   
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -410,8 +411,8 @@ nav ul li:hover {
 .drop3 {
     position: absolute;
     top: 30px;
-
-    right: -600px;
+    left:-420px;
+    
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -421,7 +422,7 @@ nav ul li:hover {
     position: absolute;
     top: 30px;
 
-    right: -600px;
+   left:-580px;
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -431,7 +432,7 @@ nav ul li:hover {
     position: absolute;
     top: 30px;
 
-    right: -300px;
+   left:-650px;
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -786,7 +787,9 @@ nav ul li:hover {
 } */
 
 
-
+.drop7 .content .row img {
+    width: 1190px;
+}
 
 
 .content .row:nth-child(odd) {
