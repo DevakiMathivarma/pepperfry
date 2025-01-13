@@ -46,10 +46,10 @@ nav ul li:hover {
     border-bottom: 2px solid rgb(196, 193, 193);
 } */
 
-.col1 input{
-   
-    position:relative;
-   
+.col1 input {
+
+    position: relative;
+
 }
 
 
@@ -70,7 +70,7 @@ nav ul li:hover {
 }
 
 .inputfocus {
-    display:inline-block;
+    display: inline-block;
     width: 250px;
     background: transparent;
     border: none;
@@ -82,7 +82,7 @@ nav ul li:hover {
     width: 300px;
     border-bottom: 2px solid rgb(214, 213, 213);
     background-color: white;
-    outline:none;
+    outline: none;
 }
 
 /* .col1 {
@@ -378,8 +378,8 @@ nav ul li:hover {
 .drop {
     position: absolute;
     top: 30px;
-  
-   left:-50px;
+
+    left: -50px;
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -391,8 +391,8 @@ nav ul li:hover {
 .drop1 {
     position: absolute;
     top: 30px;
-   left:-90px;
-   
+    left: -90px;
+
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -401,8 +401,8 @@ nav ul li:hover {
 .drop2 {
     position: absolute;
     top: 30px;
-   left:-320px;
-   
+    left: -320px;
+
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -411,8 +411,8 @@ nav ul li:hover {
 .drop3 {
     position: absolute;
     top: 30px;
-    left:-420px;
-    
+    left: -420px;
+
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -422,7 +422,7 @@ nav ul li:hover {
     position: absolute;
     top: 30px;
 
-   left:-580px;
+    left: -580px;
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -432,7 +432,7 @@ nav ul li:hover {
     position: absolute;
     top: 30px;
 
-   left:-650px;
+    left: -650px;
     visibility: hidden;
     cursor: pointer;
     z-index: 999;
@@ -1048,20 +1048,22 @@ nav ul li:hover {
 .setofimages6 .prouductimages {
     position: relative;
 }
-.popup{
-    display:none;
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    padding:20px;
-    background-color: rgba(0,0,0,0.7);
-    color:white;
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
     border-radius: 5px;
     z-index: 1000;
 }
-.added{
-    color:red;
+
+.added {
+    color: red;
 }
 
 .setofimages6 button {
@@ -1173,14 +1175,15 @@ nav ul li:hover {
     align-items: center;
     align-items: baseline;
     margin-top: 40px;
-    gap:8px;
-    
+    gap: 8px;
+
 }
-.studio-banner img{
-    width:392px;
-    height:290px;
-   
- 
+
+.studio-banner img {
+    width: 392px;
+    height: 290px;
+
+
 }
 
 
@@ -1204,14 +1207,14 @@ nav ul li:hover {
 
 .carousel-item {
     flex: 0 0 33.33%;
-   
+
     position: relative;
 }
 
 .carousel-item img {
     width: 100%;
     /* filter: grayscale(100%); */
-    filter:brightness(50%);
+    filter: brightness(50%);
 }
 
 .carousel-caption {
@@ -1599,30 +1602,285 @@ hr {
     font-family: "Manrope", serif;
     color: #848484;
     padding: 10px;
+}@media(max-width:768px){
+.navcontainer{
+    display:none;
+}
+.column1{
+    width:100%;
+    gap:0;
+}
+.inputfocus{
+  width:150px;
+  border-bottom:0.5px solid #121212;
+}
+.col1 i{
+    left:170px;
+}
+.col2{
+    gap:0
+}
+.sign {
+    gap:0;
+}
+.sign i{
+    font-size: 10px;
+}
+.store{
+    gap:2px;
+}
+.store img{
+    width:45px;
+    height:40px;
+}
+.cart {
+    width: 28px;
+    height: 28px;
+}
+.heart {
+    width: 28px;
+    height: 28px;}
+}
+.logo img{
+    width:140px;
+    height:30px
+}
+.column3 {
+    width: 100%;
+    /* flex-direction: column; */
 }
 
- @media(max-width:375px){
-    .mobile{
-        display:block;
+.banner img {
+    width: 500px;
+    /* Make banner image responsive */
+    height: 450px;
+    margin: 0;
+}
+
+.slider {
+    width: 100%;
+    max-width: 700px;
+    
+}
+
+.slid {
+display:flex;
+    width: 500%;
+}
+
+.show {
+    width: 20%;
+    flex-shrink: 0;
+}
+.show img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media(max-width:375px) {
+    .mobile {
+        display: block;
 
     }
-    .mobile img{
-        width:32px;
-        height:34px;
+
+    .mobile img {
+        width: 32px;
+        height: 34px;
     }
-    .column3{
-       width:100%;
+
+    .column3 {
+        width: 100%;
         flex-direction: column;
     }
-    .banner{
-       flex:1;
-       width:50%;
+
+    .banner img {
+        width: 100%;
+        /* Make banner image responsive */
+        height: auto;
+        margin: 0;
     }
-    .banner img{
-        width:1000px;
-       
-    }
-    .slider{
+
+    .slider {
+        width: 100%;
         max-width: 100%;
     }
-}  
+
+    .slid {
+        width: 100%;
+    }
+
+    .show {
+        width: 100%;
+    }
+
+    .column4 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .column6 {
+        width: 100%;
+    }
+
+    .column6 img {
+        width: 100%;
+    }
+
+    .column12 {
+        display: grid;
+        grid-template-columns: repeat(2, 0.2fr);
+    }
+
+    .explorebywoodworthbanner {
+        width: 100%;
+    }
+
+    .explorebywoodworthbanner img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .whislistbtn button {
+        width: 60px;
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+
+    .productswhislist img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .productswhislist-forbutton2 img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .productswhislist-forbutton3 img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .banner3 {
+        width: 100%;
+    }
+
+    .banner3 img {
+        width: 100%;
+        height: 170px;
+    }
+
+    .slider-with-button {
+        flex-direction: column;
+    }
+
+    .studio-banner img {
+        width: 350px;
+        height: 150px;
+        margin-left: 8px;
+    }
+
+    .carousel {
+        width: 100%;
+        /* Full-width carousel */
+    }
+
+    .carousel-caption {
+        bottom: 20%;
+        /* Adjust positioning */
+    }
+
+    .carousel-caption h2 {
+        font-size: 0.7rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.6rem;
+    }
+
+    .carousel-button {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+
+    .two-banner {
+        width: 100%;
+    }
+
+    .two-banner img {
+        width: 100%;
+
+    }
+
+    .newest-arrivals h2 {
+        font-size: 1rem;
+    }
+
+    .newest-collections {
+        display: grid;
+        grid-template-columns: repeat(2);
+        gap: 0;
+
+    }
+
+    .newest-arrivals-products img {
+        /* width:240px;
+        height:200px; */
+        width: 100%;
+    }
+
+    .newest-arrivals-products a {
+        padding-left: 0;
+    }
+
+    .making-diff h2 {
+        font-size: 1rem;
+    }
+
+    .interior-trends-content h2 {
+        font-size: 1rem;
+    }
+
+    .interior-trends {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .interior-trends img {
+        width: 100%;
+    }
+
+    .review-by-customer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-one img {
+        width: 100%;
+        height: auto;
+    }
+.last-banner{
+    width:100%;
+}
+.last-banner img{
+    width:100%;
+    height: auto;
+}
+.static-content{
+width:90%;
+text-align: justify;
+margin: 10px auto;
+}
+.static-content h1 strong{
+    text-align: left;
+}
+.static-content p{
+    font-size: 10px;
+    margin: 0 auto;
+}
+.furniture strong{
+    font-size: 12px;
+}
+}
