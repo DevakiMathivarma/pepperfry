@@ -1602,7 +1602,10 @@ hr {
     font-family: "Manrope", serif;
     color: #848484;
     padding: 10px;
-}@media(max-width:768px){
+}
+
+
+ @media(max-width:768px){
 .navcontainer{
     display:none;
 }
@@ -1639,7 +1642,7 @@ hr {
 }
 .heart {
     width: 28px;
-    height: 28px;}
+    height: 28px;
 }
 .logo img{
     width:140px;
@@ -1678,6 +1681,79 @@ display:flex;
     object-fit: cover;
 
 }
+.column4{
+    width:100%;
+    margin-left: 0;
+}
+.column4 .image2 img {
+    width: 200px;
+    height: 50px;
+}
+
+.column4 .image1 img {
+    width: 200px;
+    height: 50px;
+}
+
+.column4 .image3 img {
+    width:  200px;
+    height: 50px;
+}
+.column5{
+    width:100%;
+    margin: 10px;
+}
+.column5 img {
+    width: 220px;
+    height: 90px;
+}
+.column6{
+    width:100%;
+
+}
+.column6 img{
+    width:700px;
+    margin: 5px;
+}
+.column8 button{
+font-size: 0.5rem;
+}
+.column9{
+    grid-template-columns: repeat(4,0.2fr);
+}
+.column9 img{
+    width:150px;
+    height:190px;
+}
+.column12 img{
+    width:110px;
+    height:130px;
+}
+.explorebywoodworthbanner img {
+
+
+    height: 150px;
+    width: 700px;
+
+}
+.setofimages6 img {
+    width: 100px;
+    height: 120px;
+    
+}
+.setofimages6 button {
+    position: absolute;
+    left: 70px;
+    top: 100px;
+z-index: 2;}
+.banner3 img {
+    height: 200px;
+    width: 700px;
+    margin-left: 30px;
+}
+
+}
+
 
 @media(max-width:375px) {
     .mobile {
@@ -1740,6 +1816,9 @@ display:flex;
     .explorebywoodworthbanner img {
         width: 100%;
         height: 200px;
+    }
+    .setofimages6 {
+        flex-direction: column;
     }
 
     .whislistbtn button {
