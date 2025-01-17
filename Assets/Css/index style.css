@@ -1795,6 +1795,26 @@ z-index: 2;}
         flex-direction: column;
         margin-left: 0;
     }
+    .column4 .image2 img {
+        width: 100%;
+        height: 70px;
+    }
+    
+    .column4 .image1 img {
+        width: 100%;
+        height: 70px;
+    }
+    
+    .column4 .image3 img {
+        width: 100%;
+        height: 70px;
+    }
+    .column5 {
+flex-direction: column;
+    }
+    .column5 img{
+        width:100%;
+    }
 
     .column6 {
         width: 100%;
